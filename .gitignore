@@ -1,0 +1,21 @@
+# Ignorar archivos y directorios comunes
+node_modules/
+.DS_Store
+.vscode/
+package-lock.json
+yarn.lock
+*.log
+test-results.html
+bundle.js
+
+# Ignorar archivos del sistema
+$Recycle.Bin/
+*.tmp
+.rnd
+.idea/
+*.bak
+*.swp
+
+# Ignorar directorios del sistema
+Program Files/
+Windows/
