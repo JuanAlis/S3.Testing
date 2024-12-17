@@ -20,9 +20,9 @@ Sigue los siguientes pasos para instalar las dependencias y empezar a trabajar e
 1. Clona este repositorio:
    ```bash
    git clone https://github.com/JuanAlis/EjercicioTesting.git
-Tests!
-$ npm install
-$ npm run test:watch
+   $ cd S3.Testing 
+   $ npm install
+   $ npm run test:watch
 And last, open the generated test-results.html file with the "Live Server" VSCode extension to see test results.
 
 Apart from the statement, you will know exactly what you are asked to do by looking at the file tests/films.spec.js, all tests are already defined here!
