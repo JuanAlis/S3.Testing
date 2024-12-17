@@ -1,24 +1,24 @@
 // Exercise 1: Get the array of all directors.
 
 function getAllDirectors(array) {
-  let result =  array.map(array => array.director); 
-  console.log("EXERCICE 1 ->", result);
-  return result;
+  let directors =  array.map(array => array.director); 
+  console.log("EXERCICE 1 ->", directors);
+  return directors;
 }
 
 // Exercise 2: Get the films of a certain director
 function getMoviesFromDirector(array, director) {
-  let result =  array.filter(array => array.director === director); 
-  result.map(objetos => objetos.title);
-  console.log("Excercice 2 -->", result);
-  return result;
+  let directors =  array.filter(array => array.director === director); 
+  directors.map(objetos => objetos.title);
+  console.log("Excercice 2 -->", directors);
+  return directors;
 
 }
 
 // Exercise 3: Calculate the average of the films of a given director.
 function moviesAverageOfDirector(array, director) {
-  let result =  array.filter(array => array.director === director); 
-  let scores = result.map(scores => scores.score);
+  let directors =  array.filter(array => array.director === director); 
+  let scores = directors.map(scores => scores.score);
   let suma = scores.reduce((anterior, valorActual)=>{
     return anterior + valorActual;
   }, 0);
@@ -62,8 +62,8 @@ function orderByYear(array) {
 
 // Exercise 6: Calculate the average of the movies in a category
 function moviesAverageByCategory(array,genre) {
-  let result = array.filter((movie) => movie.genre.includes(genre));
-  let scores = result.map(scores => scores.score);
+  let genero = array.filter((movie) => movie.genre.includes(genre));
+  let scores = genero.map(scores => scores.score);
   let suma = scores.reduce((anterior, valorActual)=>{
     return anterior + valorActual;
   }, 0);
@@ -93,10 +93,10 @@ function hoursToMinutes(array) {
 
 // Exercise 8: Get the best film of a year
 function bestFilmOfYear(array,year) {
-  let result = array.filter(movie => movie.year === year);
-  let scores = result.map(pelicula => pelicula.score);
+  let produceTime = array.filter(movie => movie.year === year);
+  let scores = produceTime.map(pelicula => pelicula.score);
   let maxscore = Math.max(...scores);
-  let bestfilm = result.filter(pelicula => pelicula.score === maxscore);
+  let bestfilm = produceTime.filter(pelicula => pelicula.score === maxscore);
   console.log("Score mas alto del año",maxscore)
   console.log("Score mas alto del año",scores)
   console.log("mejor pelicula del año",bestfilm)
